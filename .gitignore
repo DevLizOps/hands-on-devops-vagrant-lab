@@ -1,0 +1,4 @@
+*.log
+.vagrant
+vm-en/.vagrant
+vm-es/.vagrant
