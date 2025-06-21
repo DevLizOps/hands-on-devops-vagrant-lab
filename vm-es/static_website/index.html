@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi perfil DevOps</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="terminal">
+    <div class="header">
+      <span class="circle red"></span>
+      <span class="circle yellow"></span>
+      <span class="circle green"></span>
+      <span class="title">~/mi-perfil-devops</span>
+    </div>
+    <div class="content">
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">whoami</span></p>
+      <p class="output">Certified AWS Solutions Architect - Associate & Junior DevOps Engineer en constante aprendizaje. Me interesa la automatización y la nube, además de construir entornos reproducibles, resilientes y escalables. 🌱</p>
+
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">cat aprendizajes.txt</span></p>
+      <ul class="output">
+        <li><b>¡Descubrí Vagrant!</b> Aprendí a usarlo con VirtualBox para crear máquinas virtuales.</li>
+        <li>Vagrant me recordó a AWS: <code>box ≈ AMI</code>, <code>Vagrantfile ≈ launch template</code>, <code>VM ≈ EC2</code>.</li>
+        <li>Automaticé el aprovisionamiento de mi VM con shell scripts para Docker y kubectl (I ❤️ AUTOMATION).</li>
+        <li>Y, por supuesto, ¡no podía faltar el alma de todas las DevOps parties! (o de, al menos, las mejores): Linux, pingüinos y más Linux (más 🐧??)... con algo de PowerShell para equilibrar. </li>
+      </ul>
+
+     <p><span class="prompt">lizzy@devops:~$</span><span class="command">cat semana_01/retos_dia_03.txt</span></p>
+      <ul class="output">
+        <li><b><i>Desafío:</i></b> ejecutar Vagrant con VirtualBox en entorno con WSL == tremendo dolor de cabeza.</li>
+        <li><b><i>Solución:</i></b> Vagrant + VirtualBox en Windows, Vagrant también en Ubuntu (WSL) para mayor control == máxima flexibilidad.</li>
+        <li>Resolví el acceso cruzado a archivos montando mi sistema de archivos de Windows en WSL. ¡Mucho cuidado ahora con las rutas sensibles!</li>
+      </ul>
+
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">echo "mi_objetivo"</span></p>
+      <p class="output">Me entusiasma seguir construyendo infraestructura automatizada y más segura cada vez. Para ello exploro, pruebo y sigo tirando del hilo. 🚀</p>
+
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">exit</span></p>
+
+    </div>
+  </div>
+</body>
+</html>
