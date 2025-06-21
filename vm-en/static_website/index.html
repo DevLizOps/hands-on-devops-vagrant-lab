@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My DevOps Profile</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="terminal">
+    <div class="header">
+      <span class="circle red"></span>
+      <span class="circle yellow"></span>
+      <span class="circle green"></span>
+      <span class="title">~/my-devops-profile</span>
+    </div>
+    <div class="content">
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">whoami</span></p>
+      <p class="output">Certified AWS Solutions Architect – Associate & Junior DevOps Engineer always learning. I'm into automation, the cloud, and building reproducible, resilient, and scalable environments. 🌱</p>
+
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">cat learnings.txt</span></p>
+      <ul class="output">
+        <li><b>I discovered Vagrant!</b> I learned to use it with VirtualBox to spin up virtual machines.</li>
+	<li>Vagrant reminded me of AWS: <code>box ≈ AMI</code>, <code>Vagrantfile ≈ launch template</code>,<br><code>VM ≈ EC2</code>.</li>
+	<li>I automated my VM provisioning with shell scripts for Docker and kubectl<br>(I ❤️ AUTOMATION).</li>
+        <li>And of course, no Devops party (or at least the best ones) is complete without Linux, penguins and more Linux (more 🐧??)... with a bit of PowerShell for balance.</li>
+      </ul>
+
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">cat day_03_challenges.txt</span></p>
+      <ul class="output">
+        <li><b><i>Challenge:</i></b> running Vagrant with VirtualBox in a WSL environment == major headache.</li>
+        <li><b><i>Solution:</i></b> Vagrant + VirtualBox on Windows, and Vagrant also installed in Ubuntu (WSL) for more control == maximum flexibility.</li>
+        <li>I solved the cross-filesystem access issue by mounting my Windows filesystem in WSL. Got to be extra careful now with sensitive paths!</li>
+      </ul>
+
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">echo "my_goal"</span></p>
+      <p class="output">I'm excited to keep building increasingly automated and secure infrastructure. That means exploring, experimenting and keep digging deeper. 🚀</p>
+
+      <p><span class="prompt">lizzy@devops:~$</span><span class="command">exit</span></p>
+
+    </div>
+  </div>
+</body>
+</html>
+
