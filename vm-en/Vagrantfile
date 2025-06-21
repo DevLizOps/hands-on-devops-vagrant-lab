@@ -1,0 +1,19 @@
+Vagrant.configure("2") do |config|
+  # Use a lightweight Ubuntu 22.04 image
+  config.vm.box = "ubuntu/jammy64"
+  
+  # Network configuration (accessible via private IP)
+  config.vm.network "private_network", ip: "192.168.56.6"
+
+  # Mount the local folder into the VM
+  config.vm.synced_folder "./static_website", "/home/vagrant/static_website" 
+
+  # Shell provisioning: create a test file
+  config.vm.provision "shell", inline: <<-SHELL
+    echo "Hello from provisioning!" > /tmp/hello.txt
+  SHELL
+
+  # Run external shell scripts to install Nginx and Docker
+  config.vm.provision "shell", path: "scripts/install_nginx.sh"
+  config.vm.provision "shell", path: "scripts/install_docker.sh"
+end
